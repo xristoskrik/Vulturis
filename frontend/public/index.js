@@ -3,7 +3,7 @@ import Howl from 'react-howler';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import reportWebVitals from '../../src/reportWebVitals';
 //adding bootstrap
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
@@ -22,14 +22,14 @@ root.render(
 
 
 const MusicWithURL = () => {
-    return (
-        <div>
-            <audio controls>
-                <source src="https://www.youtube.com/watch?v=Lq-i6d86leg" type="audio/mpeg" />
-                Your browser does not support the audio element.
-            </audio>
-        </div>
-    );
+  return (
+    <div>
+      <audio controls>
+        <source src="https://www.youtube.com/watch?v=Lq-i6d86leg" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+  );
 };
 
 export default MusicWithURL;
